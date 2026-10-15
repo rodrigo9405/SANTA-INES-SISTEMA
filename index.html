@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#0A3663">
+  <title>Santa Inés · Sistema de gestión</title>
+  <link rel="icon" type="image/png" href="img/icono.png">
+  <link rel="apple-touch-icon" href="img/icono.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <datalist id="dl-distritos"></datalist>
+
+  <!-- Ingreso -->
+  <div id="gate" class="gate">
+    <div class="gate-card">
+      <div class="logo-tile"><img src="img/logo.png" alt="Santa Inés · Servicio de Enfermería Geriátrica" width="560" height="330"></div>
+      <div class="shift-strip" aria-hidden="true"><i class="a"></i><i class="a"></i><i></i><i class="b"></i><i class="b"></i><i class="b"></i><i></i><i class="c"></i><i class="c"></i><i></i><i class="a"></i><i></i><i class="b"></i><i class="b"></i></div>
+      <div id="gate-body"><p class="muted" style="text-align:center"><span class="spin" aria-hidden="true"></span>Cargando…</p></div>
+    </div>
+  </div>
+
+  <!-- Sistema -->
+  <div id="app" hidden>
+    <aside class="side" aria-label="Navegación">
+      <div class="logo-tile"><img src="img/logo.png" alt="Santa Inés · Servicio de Enfermería Geriátrica" width="560" height="330"></div>
+      <p class="side-lbl">Sistema de gestión</p>
+      <nav class="nav" id="nav"></nav>
+      <div class="side-foot"><div class="admin" id="admin-chip"></div></div>
+    </aside>
+    <main class="main" id="main"></main>
+    <nav class="tabbar" id="tabbar" aria-label="Navegación"></nav>
+  </div>
+
+  <div id="modal-root"></div>
+  <div id="toast" role="status" aria-live="polite"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.117.2/dist/umd/supabase.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
